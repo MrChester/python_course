@@ -9,9 +9,12 @@ while guesses < 5:
 
 	guesses += 1
 
-	if guess != number:
-		print("Did not guess!")
-	else:
-		print("Guessed! WIN!")
+	if guess < number:
+		print("Too low, try again")
+	if guess > number:
+		print("Too high, try again")
+	if guess == number:
+		print("You guessed the number in %s tries" % str(guesses))
+		break
 else:
-	print("Guessed number is - %s" % (number))
+	print("You did not guess the number, it was %s" % str(number))
