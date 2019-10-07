@@ -52,14 +52,17 @@ get_output(is_greater(16, 25))
 
 
 # Lambda function with modulo division
-l = lambda x, y: x % y
+def modulo():
+    return lambda x, y: x % y
+
+my_modulo = modulo()
 
 get_output("# Lambda function with modulo division\n",
 			"Result of modulo division: ",
-			l(12, 7))
-get_output("Result of modulo division: ", l(78, 33))
-get_output("Result of modulo division: ", l(-78, 33))
-get_output("Result of modulo division: ", l(9, 90))
+			my_modulo(12, 7))
+get_output("Result of modulo division: ", my_modulo(78, 33))
+get_output("Result of modulo division: ", my_modulo(-78, 33))
+get_output("Result of modulo division: ", my_modulo(9, 90))
 
 # Work with decorators
 
