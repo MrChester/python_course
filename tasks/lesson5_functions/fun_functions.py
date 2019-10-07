@@ -1,47 +1,55 @@
 from separate_func import get_output
 from datetime import datetime
 
+
 # A function that returns nothing
 def return_none():
-	pass
+    pass
 
-get_output("# A function that returns nothing\n",
-			"This function returns nothing: ",
-			return_none())
+get_output(
+    "# A function that returns nothing\n",
+    "This function returns nothing: ",
+    return_none())
+
 
 # Number multiplication
 def mul_num(x):
-	return x * 2
+    return x * 2
 
-get_output("# Number multiplication\n",
-			"Result of multiplication: ",
-			 mul_num(35))
+get_output(
+    "# Number multiplication\n",
+    "Result of multiplication: ",
+    mul_num(35))
+
 
 # Even number or not?
 def is_even(x):
-	if x % 2 == 0:
-		return "{} is Even".format(x)
-	else:
-		return "{} is not even".format(x)
+    if x % 2 == 0:
+        return "{} is Even".format(x)
+    else:
+        return "{} is not even".format(x)
 
-get_output("# Even number or not?\n",
-			"This number ",
-			is_even(222))
+get_output(
+    "# Even number or not?\n",
+    "This number ",
+    is_even(222))
 get_output("This number ", is_even(223))
 get_output("This number ", is_even(224))
 get_output("This number ", is_even(225))
 
+
 # Greater than 10 task
 def is_greater(*args):
-	l = list(args)
-	if l[0] > 10:
-		return "Yes, this number - {} - greater than 10".format(l[0])
-	else:
-		return "No, this number - {} - not greater than 10".format(l[0])
+    l = list(args)
+    if l[0] > 10:
+        return "Yes, this number - {} - greater than 10".format(l[0])
+    else:
+        return "No, this number - {} - not greater than 10".format(l[0])
 
 get_output(is_greater(17, 25))
 get_output(is_greater(5, 25))
 get_output(is_greater(16, 25))
+
 
 # Lambda function with modulo division
 l = lambda x, y: x % y
