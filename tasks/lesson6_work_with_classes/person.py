@@ -8,5 +8,6 @@ class Person:
         print("First name: {}\nLast name: {}\nQualification: {}".format(
             self.first_name, self.last_name, self.qualification))
 
+
 new_person = Person("Yauheni", "Ramankou")
 new_person.person_info()

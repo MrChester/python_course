@@ -5,6 +5,7 @@ class Apple:
         self.weight = weight
         self.variety = variety
 
+
 new_apple = Apple("Green", "Middle", 285, "Honeycrisp")
 print(new_apple.color)
 print(new_apple.size)

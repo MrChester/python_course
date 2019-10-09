@@ -8,5 +8,6 @@ class Circle:
     def area(self, pi=math.pi):
         print(int(pi * self.radius ** 2))
 
+
 new_circle = Circle(10)
 new_circle.area()
